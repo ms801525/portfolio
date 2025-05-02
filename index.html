@@ -7,16 +7,50 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Quotes of the times</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <body class="body">
+        <!-- Nav bar -->
+        <div class="nav-center">
+            <a class="navbar" href="index.html"><u>Home</u></a>
+            <a class="navbar" href="about.html"><u>about</u></a>
+            <a class="navbar" href="project.html"><u>projects</u></a>
+        </div>
+        <p id="error"></p>
+        <div class="center">
+            <p class="p1" id="time"></p>
+        </div>
+        <div class="center">
+            <p class="p1"> Projects </p>
+        </div>   
+        <div class="center">
+            <button class="projectinfo"><b>Quote Of The Times </b></button>
+            <div>
+                <ul>
+                    <li>
+                        Built <a href="https://quoteofthetimes.info/" target="_blank">Quote Of The Times</a> using HTML, CSS, and JavaScript, it is a statis website that generates random quotes from the click of a button
+                    </li>
+                    <br>
+                    <li>
+                        Deployed a fully secure static website using AWS S3, CloudFront, and SSL via ACM with DNS validation, achieving HTTPS with no public file exposure
+                    </li>
+                    <br>
+                    <li>
+                        Implemented Origin Access Control (OAC) to restrict direct S3 access and configured CloudFront for content delivery, caching, and domain routing via Cloudflare
+                    </li>
+                </ul>
+            </div>
+        </div>
         
-        <script src="" async defer></script>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mustafa-ali-8b03a3181/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/ms801525" class="fa fa-github"></a>
+            <a href="https://www.instagram.com/mustafaaali/" class="fa fa-instagram"></a>
+        </div>
+        <script src="myscript.js" type="module"></script>
     </body>
 </html>
