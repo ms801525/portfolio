@@ -9,48 +9,31 @@ body{
     margin: 0;
     padding: 0;
 }
-.center{
-    margin: auto;
-    max-width: 50%;
-    align-content: center;
-    text-align: center;
-}
-.p1{
-    margin: auto;
-    text-align: center;
-    color: #fffefe;    
-    font-size: 15px;
-    border-radius: 15px;
-    opacity: 0.9;
-    background-color: #060606;
-}
-.link{
-    text-align: center;
-    color: #4a0101;
-    font-size: 20px;
-    margin-top: 20px;
-}
-.navbar{
-    overflow: hidden;
-    background-color: #060606;
-    text-align: center;
+/* Styling for nav bar */
+.navright{
+    display: flex;
+    float: right;
+    gap: 20px;
     padding: 10px 40px;
     font-size: 17px;
-    text-decoration: none;
-    color: #f4f0f0;
-    border-radius: 10px;
-    opacity: 0.9;
+    background-color: #060606;
 }
-.navbar:hover{
-    background-color: #ddd;
-    color: black;
+/* Styling for nav bar */
+.nav-width{
+    width: 100%;
+    height: 85px;
+    background-color: #060606;
 }
-.nav-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-top: 20px;
+/* Styling for nav bar */
+.div-nav{
+    padding: 10px 20px;
+    line-height: 45px;
+}
+/* Image for portfolio */
+.nav-pic{
+    float: left;
+    padding: 17px 40px;
+    line-height: 45px;
 }
 /*this is the css for the sticky socials button */
 .socials {
