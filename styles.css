@@ -4,10 +4,15 @@
     
 }
 body{
-    background-color: #f9f5f5;
+    background-color: #f7f7ff;
     font-family: Arial;
     margin: 0;
     padding: 0;
+}
+.img{
+    border-radius: 45px;
+    height: 75px;
+    width: 75px;
 }
 /* Styling for nav bar */
 .navright{
@@ -16,24 +21,36 @@ body{
     gap: 20px;
     padding: 10px 40px;
     font-size: 17px;
-    background-color: #060606;
+    background-color: #d3b392;
+    border-radius: 10px;
 }
 /* Styling for nav bar */
 .nav-width{
     width: 100%;
     height: 85px;
-    background-color: #060606;
+    background-color: #d3b392;
+    border-radius: 5px;
 }
 /* Styling for nav bar */
 .div-nav{
     padding: 10px 20px;
-    line-height: 45px;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.div-nav:hover{
+    background-color: #b89b7e;
+    transition: 0.5s;
+    cursor:auto;
+
 }
 /* Image for portfolio */
 .nav-pic{
     float: left;
-    padding: 17px 40px;
-    line-height: 45px;
+    padding: 5px 30px;
+    line-height: 40px;
 }
 /*this is the css for the sticky socials button */
 .socials {
@@ -49,7 +66,8 @@ body{
     padding: 16px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
+    height: 10px;
 }
 
 .socials a:hover {
@@ -66,15 +84,4 @@ body{
 .fa-instagram {
     background: #e1306c;
     color: white;
-}
-.projectinfo {
-    background-color: #eee;
-    color: #444;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
 }
