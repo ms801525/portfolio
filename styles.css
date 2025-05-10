@@ -11,11 +11,35 @@ body{
 }
 .img{
     border-radius: 45px;
-    height: 75px;
-    width: 75px;
+    height: 110px;
+    width: 110px;
+    float: left;
+    padding-right: 10px;
+}
+.img-quote{
+    border-radius: 45px;
+    height: 400px;
+    width: 400px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.link-web{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+.link-web:hover{
+    color: #b89b7e;
+    transition: 0.3s;
+    cursor:auto;
 }
 /* Styling for nav bar */
-.navright{
+/* .navright{
     display: flex;
     float: right;
     gap: 20px;
@@ -23,34 +47,56 @@ body{
     font-size: 17px;
     background-color: #d3b392;
     border-radius: 10px;
-}
+    opacity: 0.8;   
+} */
 /* Styling for nav bar */
 .nav-width{
     width: 100%;
-    height: 85px;
-    background-color: #d3b392;
+    height: 120px;
+    background-color: #e6e5e4bd;
     border-radius: 5px;
 }
 /* Styling for nav bar */
-.div-nav{
+/* .div-nav{
     padding: 10px 20px;
     line-height: 40px;
     border-radius: 10px;
     font-size: 15px;
     color: black;
     text-decoration: none;
-}
-.div-nav:hover{
+} */
+/* .div-nav:hover{
     background-color: #b89b7e;
     transition: 0.5s;
     cursor:auto;
 
-}
+} */
 /* Image for portfolio */
 .nav-pic{
-    float: left;
     padding: 5px 30px;
     line-height: 40px;
+    text-align: center;
+
+}
+/* center text */
+.body-content{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 10px;
+    color: black;
+    border-style: solid;
+    border-color: darkgrey;
+    border-radius: 10px;
+    margin: 20px 20px;
+    display: flex;
+}
+.header-info{
+    text-align: center;
+    display: flex;
+    float: left;
+    gap: 20px;
+    padding: 10px 10px;
+    line-height: 50px;
 }
 /*this is the css for the sticky socials button */
 .socials {
