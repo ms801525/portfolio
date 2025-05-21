@@ -31,10 +31,10 @@ a{
 }
 .img-quote{
     border-radius: 40px;
-    height: 200px;
-    max-height: 200px;
-    width: 200px;
-    max-width: 200px;
+    height: 300px;
+    max-height: 300px;
+    width: 300px;
+    max-width: 300px;
     padding-right: 10px;
     padding-bottom: 15px;
     padding-left: 10px;
@@ -60,9 +60,19 @@ a{
     border-style: solid;
     padding: 5px;
     border-radius: 10px;
+    background-color: black;
 }
 .link-web:hover{
-    color: #b89b7e;
+    transition: 0.3s;
+    cursor:auto;
+    border-color: whitesmoke;
+}
+.a-link{
+    text-decoration: none;
+    color: whitesmoke
+}
+.a-link:hover{
+    color: whitesmoke;
     transition: 0.3s;
     cursor:auto;
 }
@@ -76,8 +86,11 @@ a{
 .body-content{
     font-size: 15px;
     padding: 60px 60px;
-    color: beige;
+    color: whitesmoke;
     border-radius: 10px;
+}
+.p-text{
+    line-height: 1.7;
 }
 .starter-font{
     font-family: sans-serif;
@@ -143,4 +156,19 @@ a{
 .fa-home{
     color: black;
     padding-left: 20px;
+}
+
+/* This is for the projects file  */
+.divgrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.container-column{
+    border-color: black;
+    border-style: solid;
+    padding : 10px;
+    border-radius: 10px;
 }
