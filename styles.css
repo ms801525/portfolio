@@ -157,34 +157,55 @@ a{
 }
 
 /* This is for the projects file  */
-.divgrid{
+.divgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible column widths */
+    gap: 20px; /* Add spacing between grid items */
     padding: 20px;
-    text-align: center;
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+    margin: 0 auto; /* Center the entire grid on the page */
+    max-width:fit-content; /* Optional: Limit the grid's width */
 }
 .container-column{
     border-color: black;
     border-style: solid;
-    padding : 10px;
     border-radius: 10px;
 }
-
-
-
-
-
+.divgrid > * {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    overflow: hidden; /* Prevent content from spilling out */
+    word-wrap: break-word; /* Handle long text */
+    padding: 20px; /* Add padding for better spacing */
+}
+.divgrid img {
+    max-width: 95%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing issues */
+    margin: 10px; /* Remove any default margins */
+}
+.body-content1{
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
 /* This is for the Contact Page */
 .div-contact{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible column widths */
+    gap: 20px; /* Add spacing between grid items */
     padding: 20px;
-    gap: 10px;
-    margin: 20px;
-    border-radius: 10px;
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+    margin: 0 auto; /* Center the entire grid on the page */
+    max-width:fit-content; /* Optional: Limit the grid's width */
     border-style: solid;
-    border-color: black;
-    text-align: center;
+    border-color: black;   
     color: whitesmoke;
 }
