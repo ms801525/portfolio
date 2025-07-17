@@ -25,9 +25,7 @@ a{
 }
 .img-quote{
     border-radius: 40px;
-    height: 300px;
-    max-height: 300px;
-    width: 300px;
+    max-height: 400px;
     max-width: 300px;
     padding-right: 10px;
     padding-bottom: 15px;
@@ -74,12 +72,13 @@ a{
 /* This is for the main paragraph of the home page */
 .p-text{
     line-height: 1.7;
+    font-size: 17px;;
 }
 /* This is for the main paragraph of the home page */
 
 .starter-font{
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
     margin-bottom: -20px;
 }
@@ -149,30 +148,42 @@ a{
 
 
 /* This is for the projects file  */
-.divgrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible column widths */
-    gap: 20px; /* Add spacing between grid items */
+.divgrid > *{
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    gap: 20px;
+    overflow: hidden; /* Prevent content from spilling out */
+    word-wrap: break-word;
+    align-items: center; /* <-- Force grid items to stretch equally */
+    justify-content: center; /* Center items vertically */
     padding: 20px;
-    justify-content: center; /* Center the grid items horizontally */
-    align-items: center; /* Center the grid items vertically */
-    box-sizing: border-box; /* Ensure padding doesn't affect layout */
-    margin: 0 auto; /* Center the entire grid on the page */
-    max-width:fit-content; /* Optional: Limit the grid's width */
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px; /* optional limit to page width */
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Take full height of grid cell */
+    min-height: 450px; /* Adjust based on your design */
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+}
+.project-card .project-links {
+    margin-top: auto; /* Push links to bottom */
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 .container-column{
     border-color: black;
     border-style: solid;
     border-radius: 10px;
-}
-.divgrid > * {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    overflow: hidden; /* Prevent content from spilling out */
-    word-wrap: break-word; /* Handle long text */
-    padding: 20px; /* Add padding for better spacing */
+    margin: 3px;
 }
 .divgrid img {
     max-width: 95%; /* Ensure images fit within their containers */
@@ -181,7 +192,6 @@ a{
     margin: 10px; /* Remove any default margins */
 }
 .body-content1{
-    font-size: 15px;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
@@ -193,12 +203,19 @@ a{
     border-style: solid;
     padding: 5px;
     border-radius: 10px;
-    background-color: black;
+  
 }
 .link-web:hover{
     transition: 0.3s;
     cursor:auto;
     border-color: whitesmoke;
+    color: whitesmoke;
+}
+.p-project-text{
+    font-size: 17px;
+    line-height: 1.5;
+    color: whitesmoke;
+    text-align: center; /* Center the text */
 }
 
 
@@ -218,4 +235,17 @@ a{
     border-style: solid;
     border-color: black;   
     color: whitesmoke;
+}
+
+/* About page CSS */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: whitesmoke;
+    font-size: 17px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
 }
