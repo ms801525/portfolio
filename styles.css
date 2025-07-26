@@ -239,13 +239,39 @@ a{
     margin: 10px;
     font-size: larger;
 }
+.contact-button{
+    border-style: solid;
+    border-radius: 30px;
+    color: black;
+    background-color: whitesmoke;
+}
+.contact-button:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+
+
 
 /* About page CSS */
 .about-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+    color: whitesmoke;
+    font-size: 17px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+}
+.skills-container {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    padding: 15px;
     color: whitesmoke;
     font-size: 17px;
     line-height: 1.5;
